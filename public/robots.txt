@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://egypt-services.gov.eg/sitemap.xml

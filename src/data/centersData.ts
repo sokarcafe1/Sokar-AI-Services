@@ -1,0 +1,131 @@
+import { ServiceCenter } from '../types';
+
+export const EGYPT_GOVERNORATES = [
+  'الكل (جميع المحافظات)',
+  'القاهرة',
+  'الجيزة',
+  'الإسكندرية',
+  'الدقهلية',
+  'الشرقية',
+  'القليوبية',
+  'البحيرة',
+  'المنوفية',
+  'الغربية',
+  'كفر الشيخ',
+  'دمياط',
+  'بورسعيد',
+  'الإسماعيلية',
+  'السويس',
+  'شمال سيناء',
+  'جنوب سيناء',
+  'البحر الأحمر',
+  'الفيوم',
+  'بني سويف',
+  'المنيا',
+  'أسيوط',
+  'سوهاج',
+  'قنا',
+  'الأقصر',
+  'أسوان',
+  'الوادي الجديد',
+  'مطروح'
+];
+
+export const INITIAL_SERVICE_CENTERS: ServiceCenter[] = [
+  {
+    id: 'center-1',
+    name: 'مقر السجل المدني النموذجي بالعباسية',
+    type: 'civil_registry',
+    typeNameAr: '🆔 الأحوال المدنية والسجل المدني',
+    governorate: 'القاهرة',
+    city: 'العباسية',
+    address: 'شارع امتداد رمسيس، العباسية، القاهرة',
+    phone: '16582',
+    googleMapsUrl: 'https://maps.google.com/?q=العباسية+السجل+المدني',
+    workingHours: 'من 8:00 صباحاً حتى 8:00 مساءً (طوال الأسبوع)'
+  },
+  {
+    id: 'center-2',
+    name: 'مجمع الأحوال المدنية النموذجي بـ سيتي ستارز',
+    type: 'civil_registry',
+    typeNameAr: '🆔 السجل المدني المميز بالشهيرات',
+    governorate: 'القاهرة',
+    city: 'مدينة نصر',
+    address: 'المركز التجاري سيتي ستارز - المرحلة الأولى',
+    phone: '15388',
+    googleMapsUrl: 'https://maps.google.com/?q=سيتي+ستارز+السجل+المدني',
+    workingHours: 'من 10:00 صباحاً حتى 10:00 مساءً'
+  },
+  {
+    id: 'center-3',
+    name: 'وحدة مرور ومجمع الخدمات الذكية بالدقي',
+    type: 'traffic',
+    typeNameAr: '🚗 المرور ونيابة المرور',
+    governorate: 'الجيزة',
+    city: 'الدقي',
+    address: 'شارع وزارة الزراعة، الدقي، الجيزة',
+    phone: '0233370000',
+    googleMapsUrl: 'https://maps.google.com/?q=مرور+الدقي+الجيزة',
+    workingHours: 'من 8:00 صباحاً حتى 3:00 مساءً'
+  },
+  {
+    id: 'center-4',
+    name: 'مركز خدمات مصر الموحد بأسوان',
+    type: 'civil_registry',
+    typeNameAr: '🏛️ مركز خدمات مصر الحكومي الموحد',
+    governorate: 'أسوان',
+    city: 'أسوان',
+    address: 'طريق السادات، مدينة أسوان',
+    phone: '16528',
+    googleMapsUrl: 'https://maps.google.com/?q=مركز+خدمات+مصر+أسوان',
+    workingHours: 'من 8:30 صباحاً حتى 3:30 مساءً'
+  },
+  {
+    id: 'center-5',
+    name: 'المكتب الرئيسي للبريد المصري بمحطة مصر',
+    type: 'post_office',
+    typeNameAr: '📮 البريد المصري والخدمات البريدية',
+    governorate: 'الإسكندرية',
+    city: 'محطة مصر',
+    address: 'ميدان الشهداء، الإسكندرية',
+    phone: '16789',
+    googleMapsUrl: 'https://maps.google.com/?q=بريد+محطة+مصر+الإسكندرية',
+    workingHours: 'من 8:00 صباحاً حتى 6:00 مساءً'
+  },
+  {
+    id: 'center-6',
+    name: 'شركة شمال القاهرة لتوزيع الكهرباء - فرع شيراتون',
+    type: 'electricity',
+    typeNameAr: '⚡ مراكز خدمة عملاء الكهرباء',
+    governorate: 'القاهرة',
+    city: 'مصر الجديدة',
+    address: 'شارع النصر، مساكن شيراتون، مصر الجديدة',
+    phone: '121',
+    googleMapsUrl: 'https://maps.google.com/?q=كهرباء+شيراتون+القاهرة',
+    workingHours: 'من 8:00 صباحاً حتى 4:00 مساءً'
+  },
+  {
+    id: 'center-7',
+    name: 'مصلحة الجوازات والهجرة والجنسية بالعباسية',
+    type: 'passports',
+    typeNameAr: '✈️ مصلحة الجوازات والهجرة',
+    governorate: 'القاهرة',
+    city: 'العباسية',
+    address: 'طريق النصر، بجوار أكاديمية الشرطة القديمة، العباسية',
+    phone: '0222610515',
+    googleMapsUrl: 'https://maps.google.com/?q=مصلحة+الجوازات+العباسية',
+    workingHours: 'من 8:00 صباحاً حتى 2:30 مساءً'
+  },
+  {
+    id: 'center-8',
+    name: 'مديرية الإسكان والمرافق بالمنصورة',
+    type: 'housing',
+    typeNameAr: '🏠 مديرية الإسكان وشقق التمويل',
+    governorate: 'الدقهلية',
+    city: 'المنصورة',
+    address: 'شارع الجيش، المنصورة، الدقهلية',
+    phone: '0502244000',
+    googleMapsUrl: 'https://maps.google.com/?q=مديرية+الإسكان+المنصورة',
+    workingHours: 'من 8:30 صباحاً حتى 2:30 مساءً'
+  }
+];

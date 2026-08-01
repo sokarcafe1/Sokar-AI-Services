@@ -1,0 +1,8 @@
+{
+  "name": "Sokar AI Services",
+  "description": "Sokar AI Services — دليل الخدمات الالكترونية في موقع واحد",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

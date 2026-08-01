@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Cairo', 'Tajawal', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom Print Styles for Official Service Guides */
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+}
+
+/* Animated Background Glow & Floating Node Animations */
+@keyframes blobSlow {
+  0% { transform: translate(0px, 0px) scale(1) rotate(0deg); }
+  33% { transform: translate(55px, -65px) scale(1.18) rotate(120deg); }
+  66% { transform: translate(-45px, 45px) scale(0.88) rotate(240deg); }
+  100% { transform: translate(0px, 0px) scale(1) rotate(360deg); }
+}
+
+@keyframes blobReverse {
+  0% { transform: translate(0px, 0px) scale(1) rotate(360deg); }
+  33% { transform: translate(-65px, 55px) scale(1.15) rotate(240deg); }
+  66% { transform: translate(45px, -45px) scale(0.92) rotate(120deg); }
+  100% { transform: translate(0px, 0px) scale(1) rotate(0deg); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.35; transform: scale(1); }
+  50% { opacity: 0.75; transform: scale(1.12); }
+}
+
+@keyframes gridSweep {
+  0% { transform: translateY(-100%); opacity: 0; }
+  50% { opacity: 0.6; }
+  100% { transform: translateY(100%); opacity: 0; }
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-18px) rotate(4deg); }
+}
+
+@keyframes floatReverse {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(18px) rotate(-4deg); }
+}
+
+.animate-blob-slow {
+  animation: blobSlow 20s ease-in-out infinite;
+}
+
+.animate-blob-reverse {
+  animation: blobReverse 25s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 12s ease-in-out infinite;
+}
+
+.animate-grid-sweep {
+  animation: gridSweep 8s linear infinite;
+}
+
+.animate-float-slow {
+  animation: floatSlow 7s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: floatReverse 9s ease-in-out infinite;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
